@@ -62,12 +62,10 @@ extension StringProtocol {
         /// Convert v/x/q to the tone digits
         /// - Returns: Converted text with digital tones
         public func toneConverted() -> String {
-                return replacingOccurrences(of: "vv", with: "4")
-                .replacingOccurrences(of: "xx", with: "5")
-                .replacingOccurrences(of: "qq", with: "6")
-                .replacingOccurrences(of: "v", with: "1")
-                .replacingOccurrences(of: "x", with: "2")
-                .replacingOccurrences(of: "q", with: "3")
+                return replacingOccurrences(of: "yy", with: "4")
+                .replacingOccurrences(of: "y", with: "3")
+                .replacingOccurrences(of: "ww", with: "2")
+                .replacingOccurrences(of: "w", with: "1")
         }
 
         /// Format text with separators and tones

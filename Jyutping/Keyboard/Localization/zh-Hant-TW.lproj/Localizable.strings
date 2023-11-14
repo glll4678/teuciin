@@ -1,36 +1,37 @@
 // MARK: - SettingsView
 
-"Traditional Characters" = "傳統漢字";
-"Traditional Characters, Hong Kong" = "傳統漢字・香港";
-"Traditional Characters, Taiwan" = "傳統漢字・臺灣";
-"Simplified Characters" = "简化字";
+//"Traditional Characters" = "傳統漢字";
+//"Traditional Characters, Hong Kong" = "傳統漢字・香港";
+//"Traditional Characters, Taiwan" = "傳統漢字・臺灣";
+//"Simplified Characters" = "简化字";
 
-"Keyboard Feedback" = "鍵盤回應";
+"Keyboard Feedback" = "鍵盤回饋";
 "Sound" = "聲音";
 "Haptic" = "觸感";
 "Haptic.None" = "無";
 "Haptic.Light" = "輕";
 "Haptic.Medium" = "中";
 "Haptic.Heavy" = "重";
-"Haptic Feedback requires Full Access" = "觸感回應需啓用「完整取用」";
+"Haptic Feedback requires Full Access" = "觸感回應需啟用「完整取用」";
 
-"Emoji Suggestions" = "繪文字(Emoji)候選詞";
+//"Emoji Suggestions" = "繪文字(Emoji)候選詞";
+//
+//"Keyboard Layout" = "鍵盤佈局";
+//"KeyboardLayout.QWERTY" = "全鍵盤・QWERTY";
+//"KeyboardLayout.SaamPing" = "三拼";
+//"KeyboardLayout.10Key" = "九宮格";
 
-"Keyboard Layout" = "鍵盤佈局";
-"KeyboardLayout.QWERTY" = "全鍵盤・QWERTY";
-"KeyboardLayout.SaamPing" = "三拼";
-"KeyboardLayout.10Key" = "九宮格";
-
-"Jyutping Display" = "粵拼顯示";
+"Jyutping Display" = "客拼顯示";
 "Above Candidates" = "候選詞之上";
 "Below Candidates" = "候選詞之下";
 "No Jyutping" = "無";
 
-"Jyutping Tones Display" = "粵拼聲調樣式";
-"ToneDisplayStyle.Option1" = "正常　 :   jyut6 ping3";
-"ToneDisplayStyle.Option2" = "無聲調 :   jyut ping";
-"ToneDisplayStyle.Option3" = "上標　 :   jyut⁶ ping³";
-"ToneDisplayStyle.Option4" = "下標　 :   jyut₆ ping₃";
+"Jyutping Tones Display" = "客拼聲調樣式";
+
+"ToneDisplayStyle.Option1" = "正常　 :   hag1 pin1";
+"ToneDisplayStyle.Option2" = "無聲調 :   hag pin";
+"ToneDisplayStyle.Option3" = "上標　 :   hag¹ pin¹";
+"ToneDisplayStyle.Option4" = "下標　 :   hag₁ pin₁";
 
 "Space Double Tapping Shortcut" = "雙擊空格掣快捷動作";
 "DoubleSpaceShortcut.Option1" = "輸入一個句號「。」";
@@ -43,7 +44,7 @@
 
 // MARK: - EditingPanel
 
-"Clear Clipboard" = "清空剪帖板";
-"Paste" = "帖上";
+"Clear Clipboard" = "清空剪貼簿";
+"Paste" = "貼上";
 "Back" = "返回";
 "Clear" = "清空前文";

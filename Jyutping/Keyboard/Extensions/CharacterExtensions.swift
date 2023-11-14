@@ -20,7 +20,7 @@ extension Character {
 
 extension Character {
 
-        private static let reverseLookupTriggers: Set<Character> = ["r", "v", "x", "q"]
+        private static let reverseLookupTriggers: Set<Character> = ["r"]
 
         /// r / v / x / q
         var isReverseLookupTrigger: Bool {

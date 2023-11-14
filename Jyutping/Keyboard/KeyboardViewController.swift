@@ -179,15 +179,18 @@ final class KeyboardViewController: UIInputViewController, ObservableObject {
                                 text2mark = String.empty
                                 candidates = []
                         case .some("r"):
-                                pinyinReverseLookup()
-                        case .some("v"):
                                 ensureQwertyForm(to: .cangjie)
                                 cangjieReverseLookup()
-                        case .some("x"):
-                                ensureQwertyForm(to: .stroke)
-                                strokeReverseLookup()
-                        case .some("q"):
-                                composeReverseLookup()
+//                        case .some("r"):
+//                                pinyinReverseLookup()
+//                        case .some("v"):
+//                                ensureQwertyForm(to: .cangjie)
+//                                cangjieReverseLookup()
+//                        case .some("x"):
+//                                ensureQwertyForm(to: .stroke)
+//                                strokeReverseLookup()
+//                        case .some("q"):
+//                                composeReverseLookup()
                         default:
                                 suggest()
                         }
@@ -665,7 +668,7 @@ final class KeyboardViewController: UIInputViewController, ObservableObject {
                         returnKeyText = newText
                 }
         }
-        @Published private(set) var spaceKeyText: String = "粵拼"
+        @Published private(set) var spaceKeyText: String = "頭陣"
         private func updateSpaceKeyText() {
                 let newText: String = {
                         guard inputMethodMode.isCantonese else { return "space" }
@@ -673,7 +676,7 @@ final class KeyboardViewController: UIInputViewController, ObservableObject {
                         let isSimplified: Bool = Options.characterStandard.isSimplified
                         switch keyboardCase {
                         case .lowercased:
-                                return isSimplified ? "粤拼·简化字" : "粵拼"
+                                return isSimplified ? "头阵・简化字" : "頭陣"
                         case .uppercased:
                                 return isSimplified ? "全宽空格" : "全寬空格"
                         case .capsLocked:

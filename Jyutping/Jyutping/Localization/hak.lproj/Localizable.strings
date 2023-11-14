@@ -1,0 +1,38 @@
+// MARK: - General
+
+"Settings" = "設定";
+"Edit" = "編輯";
+"OK" = "好";
+"Cancel" = "取消";
+"Copy" = "複製";
+
+"Home" = "首頁";
+"Jyutping" = "頭陣";
+"Cantonese" = "客語";
+"About" = "關於";
+
+
+// MARK: - iOS Home
+
+"Input Text Field" = "輸入框";
+
+"How to enable this Keyboard" = "如何啟用輸入法";
+"accessibility.how_to_enable_this_keyboard" = "一：跳轉至「設定」；二：選擇「鍵盤」；三：開啟「頭陣」；四：開啟「允許完整取用」。";
+
+"Jump to **Settings**" = "跳轉至 **設定**";
+"Tap **Keyboards**" = "點選 **鍵盤**";
+"Turn on **Jyutping**" = "開啟 **頭陣**";
+"Turn on **Allow Full Access**" = "開啟 **允許完整取用**";
+"Haptic Feedback requires Full Access" = "振動回饋需要「完整取用」權限";
+"Go to **Settings**" = "前往 **設定**";
+
+"Tones Input" = "聲調輸入";
+"tones.input.description" = "陰平(24)：w\n陽平(11)：ww\n上　(31)：y\n去　(55)：yy\n陰入(2 )：w\n陽入(5 )：ww";
+"tones.input.examples" = "[例] 頭陣(teuˇ ziin)：teuww ziinyy";
+
+"Lookup Jyutping with Cangjie" = "用倉頡反查客拼";
+"Cangjie Reverse Lookup Description" = "以 r 開始，正輸入倉頡(五代)碼就做得。像輸入 rdam 就會出「查」等。候選詞會帶顯示對應个客拼。";
+
+"Credit" = "Credit";
+"credit.1" = "程式碼修改自 jyutping/Jyutping";
+"credit.2" = "詞庫資料取自教育部《臺灣客家語常用詞辭典》";

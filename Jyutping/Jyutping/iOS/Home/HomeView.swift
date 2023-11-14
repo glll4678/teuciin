@@ -8,7 +8,7 @@ struct HomeView: View {
 
         @State private var isKeyboardEnabled: Bool = {
                 guard let keyboards: [String] = UserDefaults.standard.object(forKey: "AppleKeyboards") as? [String] else { return false }
-                return keyboards.contains("im.cantonese.CantoneseIM.Keyboard")
+                return keyboards.contains("tw.tauhu.Teuciin.Kienpan")
         }()
         @State private var isGuideViewExpanded: Bool = false
 
@@ -20,8 +20,6 @@ struct HomeView: View {
         var body: some View {
                 NavigationView {
                         List {
-                                SearchView(placeholder: "Input Text Field", submitLabel: .return, animationState: $animationState)
-
                                 Section {
                                         if isKeyboardEnabled {
                                                 HStack {
@@ -92,45 +90,23 @@ struct HomeView: View {
                                                 Text("tones.input.examples")
                                         }
                                         Section {
-                                                Text("Lookup Jyutping with Pinyin").font(.significant)
-                                                Text("Pinyin Reverse Lookup Description").lineSpacing(6)
-                                        }
-                                        Section {
                                                 Text("Lookup Jyutping with Cangjie").font(.significant)
                                                 Text("Cangjie Reverse Lookup Description").lineSpacing(6)
                                         }
                                         Section {
-                                                Text("Lookup Jyutping with Stroke").font(.significant)
-                                                Text("Stroke Reverse Lookup Description").lineSpacing(6)
-                                                Text("Stroke Key Description").font(.fixedWidth).lineSpacing(5)
-                                        }
-                                        Section {
-                                                Text("Lookup Jyutping with Loengfan").font(.significant)
-                                                Text("Loengfan Reverse Lookup Description").lineSpacing(6)
+                                                Text("Credit").font(.significant)
+                                                NoteView("credit.1")
+                                                NoteView("credit.2")
                                         }
                                 }
                                 .textSelection(.enabled)
 
-                                Section {
-                                        NavigationLink(destination: IntroductionsView()) {
-                                                Label("More Introductions", systemImage: "info.circle")
-                                        }
-                                        NavigationLink(destination: Text2SpeechView()) {
-                                                Label("Text to Speech", systemImage: "speaker.wave.2")
-                                        }
-                                        NavigationLink(destination: FAQView()) {
-                                                Label("FAQ", systemImage: "questionmark.circle")
-                                        }
-                                        NavigationLink(destination: PrivacyNoticeView()) {
-                                                Label("Privacy Notice", systemImage: "lock.circle")
-                                        }
-                                }
                         }
                         .animation(.default, value: animationState)
                         .animation(.default, value: isGuideViewExpanded)
                         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
                                 guard let keyboards: [String] = UserDefaults.standard.object(forKey: "AppleKeyboards") as? [String] else { return }
-                                let isContained: Bool =  keyboards.contains("im.cantonese.CantoneseIM.Keyboard")
+                                let isContained: Bool =  keyboards.contains("tw.tauhu.Teuciin.Kienpan")
                                 if isKeyboardEnabled != isContained {
                                         isKeyboardEnabled = isContained
                                 }
@@ -138,6 +114,23 @@ struct HomeView: View {
                         .navigationTitle("Home")
                 }
                 .navigationViewStyle(.stack)
+        }
+}
+
+private struct NoteView: View {
+
+        init(_ text: LocalizedStringKey) {
+                self.text = text
+        }
+
+        private let text: LocalizedStringKey
+
+        var body: some View {
+                HStack {
+                        Text.dotMark
+                        Text(text)
+                        Spacer()
+                }
         }
 }
 

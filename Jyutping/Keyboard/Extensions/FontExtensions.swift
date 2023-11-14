@@ -12,13 +12,13 @@ extension Font {
                 let standard: CharacterStandard = characterStandard ?? Options.characterStandard
                 switch standard {
                 case .traditional:
-                        return Font.custom(Constant.PingFangHK, fixedSize: 20)
+                        return Font.custom("TauhuOo20.05-Regular", fixedSize: 20)
                 case .hongkong:
-                        return Font.custom(Constant.PingFangHK, fixedSize: 20)
+                        return Font.custom("TauhuOo20.05-Regular", fixedSize: 20)
                 case .taiwan:
-                        return Font.custom(Constant.PingFangTC, fixedSize: 20)
+                        return Font.custom("TauhuOo20.05-Regular", fixedSize: 20)
                 case .simplified:
-                        return Font.custom(Constant.PingFangSC, fixedSize: 20)
+                        return Font.custom("TauhuOo20.05-Regular", fixedSize: 20)
                 }
         }
 

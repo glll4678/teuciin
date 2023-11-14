@@ -13,7 +13,7 @@
 			<key>PrefersRightToLeft</key>
 			<false/>
 			<key>PrimaryLanguage</key>
-			<string>zh-HK</string>
+			<string>hak</string>
 			<key>RequestsOpenAccess</key>
 			<true/>
 		</dict>
@@ -22,5 +22,9 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).KeyboardViewController</string>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>TauhuOo20.05-Regular.otf</string>
+	</array>
 </dict>
 </plist>

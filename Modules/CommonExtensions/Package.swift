@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
         name: "CommonExtensions",
-        platforms: [.iOS(.v15), .macOS(.v12)],
+        platforms: [.iOS(.v15)],
         products: [
                 .library(name: "CommonExtensions", targets: ["CommonExtensions"])
         ],

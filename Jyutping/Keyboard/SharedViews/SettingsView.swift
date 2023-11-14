@@ -39,56 +39,56 @@ struct SettingsView: View {
                                 context.updateKeyboardForm(to: context.previousKeyboardForm)
                         }
                         List {
-                                Section {
-                                        Button {
-                                                AudioFeedback.modified()
-                                                context.triggerSelectionHapticFeedback()
-                                                selectedCharacterStandard = .traditional
-                                                Options.updateCharacterStandard(to: .traditional)
-                                        } label: {
-                                                HStack {
-                                                        Text("Traditional Characters").foregroundStyle(Color.primary)
-                                                        Spacer()
-                                                        Image.checkmark.opacity(selectedCharacterStandard == .traditional ? 1: 0)
-                                                }
-                                        }
-                                        Button {
-                                                AudioFeedback.modified()
-                                                context.triggerSelectionHapticFeedback()
-                                                selectedCharacterStandard = .hongkong
-                                                Options.updateCharacterStandard(to: .hongkong)
-                                        } label: {
-                                                HStack {
-                                                        Text("Traditional Characters, Hong Kong").foregroundStyle(Color.primary)
-                                                        Spacer()
-                                                        Image.checkmark.opacity(selectedCharacterStandard == .hongkong ? 1: 0)
-                                                }
-                                        }
-                                        Button {
-                                                AudioFeedback.modified()
-                                                context.triggerSelectionHapticFeedback()
-                                                selectedCharacterStandard = .taiwan
-                                                Options.updateCharacterStandard(to: .taiwan)
-                                        } label: {
-                                                HStack {
-                                                        Text("Traditional Characters, Taiwan").foregroundStyle(Color.primary)
-                                                        Spacer()
-                                                        Image.checkmark.opacity(selectedCharacterStandard == .taiwan ? 1: 0)
-                                                }
-                                        }
-                                        Button {
-                                                AudioFeedback.modified()
-                                                context.triggerSelectionHapticFeedback()
-                                                selectedCharacterStandard = .simplified
-                                                Options.updateCharacterStandard(to: .simplified)
-                                        } label: {
-                                                HStack {
-                                                        Text("Simplified Characters").foregroundStyle(Color.primary)
-                                                        Spacer()
-                                                        Image.checkmark.opacity(selectedCharacterStandard == .simplified ? 1: 0)
-                                                }
-                                        }
-                                }
+//                                Section {
+//                                        Button {
+//                                                AudioFeedback.modified()
+//                                                context.triggerSelectionHapticFeedback()
+//                                                selectedCharacterStandard = .traditional
+//                                                Options.updateCharacterStandard(to: .traditional)
+//                                        } label: {
+//                                                HStack {
+//                                                        Text("Traditional Characters").foregroundStyle(Color.primary)
+//                                                        Spacer()
+//                                                        Image.checkmark.opacity(selectedCharacterStandard == .traditional ? 1: 0)
+//                                                }
+//                                        }
+//                                        Button {
+//                                                AudioFeedback.modified()
+//                                                context.triggerSelectionHapticFeedback()
+//                                                selectedCharacterStandard = .hongkong
+//                                                Options.updateCharacterStandard(to: .hongkong)
+//                                        } label: {
+//                                                HStack {
+//                                                        Text("Traditional Characters, Hong Kong").foregroundStyle(Color.primary)
+//                                                        Spacer()
+//                                                        Image.checkmark.opacity(selectedCharacterStandard == .hongkong ? 1: 0)
+//                                                }
+//                                        }
+//                                        Button {
+//                                                AudioFeedback.modified()
+//                                                context.triggerSelectionHapticFeedback()
+//                                                selectedCharacterStandard = .taiwan
+//                                                Options.updateCharacterStandard(to: .taiwan)
+//                                        } label: {
+//                                                HStack {
+//                                                        Text("Traditional Characters, Taiwan").foregroundStyle(Color.primary)
+//                                                        Spacer()
+//                                                        Image.checkmark.opacity(selectedCharacterStandard == .taiwan ? 1: 0)
+//                                                }
+//                                        }
+//                                        Button {
+//                                                AudioFeedback.modified()
+//                                                context.triggerSelectionHapticFeedback()
+//                                                selectedCharacterStandard = .simplified
+//                                                Options.updateCharacterStandard(to: .simplified)
+//                                        } label: {
+//                                                HStack {
+//                                                        Text("Simplified Characters").foregroundStyle(Color.primary)
+//                                                        Spacer()
+//                                                        Image.checkmark.opacity(selectedCharacterStandard == .simplified ? 1: 0)
+//                                                }
+//                                        }
+//                                }
                                 Section {
                                         Toggle("Sound", isOn: $isAudioFeedbackOn)
                                                 .onChange(of: isAudioFeedbackOn) { newValue in
@@ -127,55 +127,55 @@ struct SettingsView: View {
                                         }
                                 }
 
-                                Section {
-                                        Toggle("Emoji Suggestions", isOn: $isEmojiSuggestionsOn)
-                                                .onChange(of: isEmojiSuggestionsOn) { newValue in
-                                                        Options.updateEmojiSuggestions(to: newValue)
-                                                }
-                                }
-
-                                Section {
-                                        Button {
-                                                AudioFeedback.modified()
-                                                context.triggerSelectionHapticFeedback()
-                                                selectedKeyboardLayout = .qwerty
-                                                Options.updateKeyboardLayout(to: .qwerty)
-                                        } label: {
-                                                HStack {
-                                                        Text("KeyboardLayout.QWERTY").foregroundStyle(Color.primary)
-                                                        Spacer()
-                                                        Image.checkmark.opacity(selectedKeyboardLayout == .qwerty ? 1: 0)
-                                                }
-                                        }
-                                        Button {
-                                                AudioFeedback.modified()
-                                                context.triggerSelectionHapticFeedback()
-                                                selectedKeyboardLayout = .saamPing
-                                                Options.updateKeyboardLayout(to: .saamPing)
-                                        } label: {
-                                                HStack {
-                                                        Text("KeyboardLayout.SaamPing").foregroundStyle(Color.primary)
-                                                        Spacer()
-                                                        Image.checkmark.opacity(selectedKeyboardLayout == .saamPing ? 1: 0)
-                                                }
-                                        }
-                                        if context.isPhone {
-                                                Button {
-                                                        AudioFeedback.modified()
-                                                        context.triggerSelectionHapticFeedback()
-                                                        selectedKeyboardLayout = .tenKey
-                                                        Options.updateKeyboardLayout(to: .tenKey)
-                                                } label: {
-                                                        HStack {
-                                                                Text("KeyboardLayout.10Key").foregroundStyle(Color.primary)
-                                                                Spacer()
-                                                                Image.checkmark.opacity(selectedKeyboardLayout == .tenKey ? 1: 0)
-                                                        }
-                                                }
-                                        }
-                                } header: {
-                                        Text("Keyboard Layout").textCase(nil)
-                                }
+//                                Section {
+//                                        Toggle("Emoji Suggestions", isOn: $isEmojiSuggestionsOn)
+//                                                .onChange(of: isEmojiSuggestionsOn) { newValue in
+//                                                        Options.updateEmojiSuggestions(to: newValue)
+//                                                }
+//                                }
+//
+//                                Section {
+//                                        Button {
+//                                                AudioFeedback.modified()
+//                                                context.triggerSelectionHapticFeedback()
+//                                                selectedKeyboardLayout = .qwerty
+//                                                Options.updateKeyboardLayout(to: .qwerty)
+//                                        } label: {
+//                                                HStack {
+//                                                        Text("KeyboardLayout.QWERTY").foregroundStyle(Color.primary)
+//                                                        Spacer()
+//                                                        Image.checkmark.opacity(selectedKeyboardLayout == .qwerty ? 1: 0)
+//                                                }
+//                                        }
+//                                        Button {
+//                                                AudioFeedback.modified()
+//                                                context.triggerSelectionHapticFeedback()
+//                                                selectedKeyboardLayout = .saamPing
+//                                                Options.updateKeyboardLayout(to: .saamPing)
+//                                        } label: {
+//                                                HStack {
+//                                                        Text("KeyboardLayout.SaamPing").foregroundStyle(Color.primary)
+//                                                        Spacer()
+//                                                        Image.checkmark.opacity(selectedKeyboardLayout == .saamPing ? 1: 0)
+//                                                }
+//                                        }
+//                                        if context.isPhone {
+//                                                Button {
+//                                                        AudioFeedback.modified()
+//                                                        context.triggerSelectionHapticFeedback()
+//                                                        selectedKeyboardLayout = .tenKey
+//                                                        Options.updateKeyboardLayout(to: .tenKey)
+//                                                } label: {
+//                                                        HStack {
+//                                                                Text("KeyboardLayout.10Key").foregroundStyle(Color.primary)
+//                                                                Spacer()
+//                                                                Image.checkmark.opacity(selectedKeyboardLayout == .tenKey ? 1: 0)
+//                                                        }
+//                                                }
+//                                        }
+//                                } header: {
+//                                        Text("Keyboard Layout").textCase(nil)
+//                                }
 
                                 Section {
                                         Button {

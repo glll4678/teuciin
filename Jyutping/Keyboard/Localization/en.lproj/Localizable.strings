@@ -1,9 +1,9 @@
 // MARK: - SettingsView
 
-"Traditional Characters" = "Traditional Characters";
-"Traditional Characters, Hong Kong" = "Traditional Characters, Hong Kong";
-"Traditional Characters, Taiwan" = "Traditional Characters, Taiwan";
-"Simplified Characters" = "Simplified Characters";
+//"Traditional Characters" = "Traditional Characters";
+//"Traditional Characters, Hong Kong" = "Traditional Characters, Hong Kong";
+//"Traditional Characters, Taiwan" = "Traditional Characters, Taiwan";
+//"Simplified Characters" = "Simplified Characters";
 
 "Keyboard Feedback" = "Keyboard Feedback";
 "Sound" = "Sound";
@@ -14,23 +14,23 @@
 "Haptic.Heavy" = "Heavy";
 "Haptic Feedback requires Full Access" = "Haptic Feedback requires Full Access";
 
-"Emoji Suggestions" = "Emoji Suggestions";
+//"Emoji Suggestions" = "Emoji Suggestions";
+//
+//"Keyboard Layout" = "Keyboard Layout";
+//"KeyboardLayout.QWERTY" = "QWERTY (全鍵盤)";
+//"KeyboardLayout.SaamPing" = "SaamPing (三拼)";
+//"KeyboardLayout.10Key" = "10 Key (九宮格)";
 
-"Keyboard Layout" = "Keyboard Layout";
-"KeyboardLayout.QWERTY" = "QWERTY (全鍵盤)";
-"KeyboardLayout.SaamPing" = "SaamPing (三拼)";
-"KeyboardLayout.10Key" = "10 Key (九宮格)";
-
-"Jyutping Display" = "Jyutping Display";
+"Jyutping Display" = "Hagpin Display";
 "Above Candidates" = "Above Candidates";
 "Below Candidates" = "Below Candidates";
 "No Jyutping" = "None";
 
-"Jyutping Tones Display" = "Jyutping Tones Display";
-"ToneDisplayStyle.Option1" = "Normal         :  jyut6 ping3";
-"ToneDisplayStyle.Option2" = "No Tones     :  jyut ping";
-"ToneDisplayStyle.Option3" = "Superscript :  jyut⁶ ping³";
-"ToneDisplayStyle.Option4" = "Subscript    :  jyut₆ ping₃";
+"Jyutping Tones Display" = "Hagpin Tones Display";
+"ToneDisplayStyle.Option1" = "Normal         :  hag1 pin1";
+"ToneDisplayStyle.Option2" = "No Tones     :  hag pin";
+"ToneDisplayStyle.Option3" = "Superscript :  hag¹ pin¹";
+"ToneDisplayStyle.Option4" = "Subscript    :  hag₁ pin₁";
 
 "Space Double Tapping Shortcut" = "Space Double Tapping Shortcut";
 "DoubleSpaceShortcut.Option1" = "Insert a Period (Full Stop)";
