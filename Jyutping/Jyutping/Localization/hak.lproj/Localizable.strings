@@ -16,7 +16,7 @@
 
 "Input Text Field" = "輸入框";
 
-"How to enable this Keyboard" = "如何啟用輸入法";
+"How to enable this Keyboard" = "仰般啟用輸入法";
 "accessibility.how_to_enable_this_keyboard" = "一：跳轉至「設定」；二：選擇「鍵盤」；三：開啟「頭陣」；四：開啟「允許完整取用」。";
 
 "Jump to **Settings**" = "跳轉至 **設定**";
@@ -26,13 +26,13 @@
 "Haptic Feedback requires Full Access" = "振動回饋需要「完整取用」權限";
 "Go to **Settings**" = "前往 **設定**";
 
-"Tones Input" = "聲調輸入";
-"tones.input.description" = "陰平(24)：w\n陽平(11)：ww\n上　(31)：y\n去　(55)：yy\n陰入(2 )：w\n陽入(5 )：ww";
-"tones.input.examples" = "[例] 頭陣(teuˇ ziin)：teuww ziinyy";
+"Tones Input" = "聲調輸入（目前有問題）";
+"tones.input.description" = "陰平(24)：w\n陽平(11)：ww\n上　(31)：www\n去　(55)：wwww\n陰入(2 )：w\n陽入(5 )：ww";
+"tones.input.examples" = "[例] 頭陣(teuˇ ziin)：teuww ziinwwww";
 
 "Lookup Jyutping with Cangjie" = "用倉頡反查客拼";
-"Cangjie Reverse Lookup Description" = "以 r 開始，正輸入倉頡(五代)碼就做得。像輸入 rdam 就會出「查」等。候選詞會帶顯示對應个客拼。";
+"Cangjie Reverse Lookup Description" = "以 y 開始，正輸入倉頡(五代)碼就做得。像輸入 ydam 就會出「查」等。候選詞會帶顯示對應个客拼。";
 
 "Credit" = "Credit";
-"credit.1" = "程式碼修改自 jyutping/Jyutping";
+"credit.1" = "程式碼修改自 jyutping/Jyutping (GitHub)";
 "credit.2" = "詞庫資料取自教育部《臺灣客家語常用詞辭典》";

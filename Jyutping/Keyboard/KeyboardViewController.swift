@@ -178,7 +178,7 @@ final class KeyboardViewController: UIInputViewController, ObservableObject {
                                 ensureQwertyForm(to: .jyutping)
                                 text2mark = String.empty
                                 candidates = []
-                        case .some("r"):
+                        case .some("y"):
                                 ensureQwertyForm(to: .cangjie)
                                 cangjieReverseLookup()
 //                        case .some("r"):

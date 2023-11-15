@@ -27,12 +27,12 @@
 "Haptic Feedback requires Full Access" = "Haptic Feedback requires Full Access";
 "Go to **Settings**" = "Go to **Settings**";
 
-"Tones Input" = "Tones Input";
-"tones.input.description" = "v = 1, High Level (陰平)\nx = 2, Medium Rising (陰上)\nq = 3, Medium Level (陰去)\nvv = 4, Low Falling (陽平)\nxx = 5, Low Rising (陽上)\nqq = 6, Low Level (陽去)";
-"tones.input.examples" = "Examples: sinq = sin3(線), sinqq = sin6(羨)";
+"Tones Input" = "Tones Input (sometimes not work)";
+"tones.input.description" = "陰平(24)：w\n陽平(11)：ww\n上　(31)：www\n去　(55)：wwww\n陰入(2 )：w\n陽入(5 )：ww";
+"tones.input.examples" = "[例] 頭陣(teuˇ ziin)：teuww ziinwwww";
 
 "Lookup Jyutping with Cangjie" = "Lookup Jyutping with Cangjie";
-"Cangjie Reverse Lookup Description" = "Start with “r”, then enter Cangjie5 code. For example, enter “rdam”, candidate “查” will appear. Candidates will be displayed with the corresponding Jyutping.";
+"Cangjie Reverse Lookup Description" = "Start with “y”, then enter Cangjie5 code. For example, enter “ydam”, candidate “查” will appear. Candidates will be displayed with the corresponding Jyutping.";
 
 "Credit" = "Credit";
 "credit.1" = "Code modify from jyutping/Jyutping (GitHub)";

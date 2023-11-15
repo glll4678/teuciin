@@ -156,6 +156,7 @@
 		37F85CFA2A99AFAC0009C2C8 /* LargePadCangjieKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F85CF92A99AFAC0009C2C8 /* LargePadCangjieKeyboard.swift */; };
 		37F85CFC2A99B1A90009C2C8 /* LargePadStrokeInputKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F85CFB2A99B1A90009C2C8 /* LargePadStrokeInputKey.swift */; };
 		37F85CFE2A99B21F0009C2C8 /* LargePadStrokeKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F85CFD2A99B21F0009C2C8 /* LargePadStrokeKeyboard.swift */; };
+		660A58632B04CBA800855086 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 660A58622B04CBA700855086 /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,6 +341,7 @@
 		37F85CFB2A99B1A90009C2C8 /* LargePadStrokeInputKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePadStrokeInputKey.swift; sourceTree = "<group>"; };
 		37F85CFD2A99B21F0009C2C8 /* LargePadStrokeKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePadStrokeKeyboard.swift; sourceTree = "<group>"; };
 		37FC1AE3294DF65400D7153F /* CoreIME */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoreIME; path = ../Modules/CoreIME; sourceTree = "<group>"; };
+		660A58622B04CBA700855086 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		66983B3A2B020DAD00CD38AC /* hak */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hak; path = hak.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66983B3B2B020DAD00CD38AC /* hak */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hak; path = hak.lproj/Localizable.strings; sourceTree = "<group>"; };
 		66983B3C2B020DAD00CD38AC /* hak */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hak; path = hak.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 		3768B48F2A00C2A10049D7C1 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				660A58622B04CBA700855086 /* fonts */,
 				3768B4902A00C2A10049D7C1 /* KeyboardViewController.swift */,
 				37534F2A2A9DEF080027F73A /* SharedModels */,
 				37534F292A9DECDE0027F73A /* SharedViews */,
@@ -774,6 +777,7 @@
 				37DE32982A024D400066D03A /* Images.xcassets in Resources */,
 				37DE32B52A028A3D0066D03A /* Localizable.strings in Resources */,
 				37DE32B42A028A3D0066D03A /* InfoPlist.strings in Resources */,
+				660A58632B04CBA800855086 /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,7 +1017,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.tauhu.Teuciin.Kienpan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1045,7 +1049,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.tauhu.Teuciin.Kienpan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1193,7 +1197,7 @@
 				CODE_SIGN_ENTITLEMENTS = Jyutping/Jyutping.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Jyutping/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -1216,7 +1220,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.tauhu.Teuciin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -1238,7 +1242,7 @@
 				CODE_SIGN_ENTITLEMENTS = Jyutping/Jyutping.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Jyutping/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -1261,7 +1265,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.tauhu.Teuciin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

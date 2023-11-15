@@ -62,8 +62,8 @@ extension StringProtocol {
         /// Convert v/x/q to the tone digits
         /// - Returns: Converted text with digital tones
         public func toneConverted() -> String {
-                return replacingOccurrences(of: "yy", with: "4")
-                .replacingOccurrences(of: "y", with: "3")
+                return replacingOccurrences(of: "wwww", with: "4")
+                .replacingOccurrences(of: "www", with: "3")
                 .replacingOccurrences(of: "ww", with: "2")
                 .replacingOccurrences(of: "w", with: "1")
         }
